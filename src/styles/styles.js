@@ -1,0 +1,82 @@
+const styles = {
+  container: {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100vh',
+  width: '100vw',
+  fontFamily: 'Segoe UI, sans-serif',
+  },
+   wrapperBox: {
+    display: 'flex',
+    width: '90%',
+    maxWidth: '1100px',
+    height: '90vh',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    boxShadow: '0 0 20px rgba(0,0,0,0.1)',
+  },
+  sidebar: {
+    width: '25%',
+    backgroundColor: '#1e293b',
+    color: '#f1f5f9',
+    padding: '1rem',
+    overflowY: 'auto',
+  },
+  ticketCard: (isActive) => ({
+    border: '1px solid #475569',
+    borderRadius: '8px',
+    padding: '0.75rem',
+    marginBottom: '0.75rem',
+    backgroundColor: isActive ? '#3b82f6' : '#334155',
+    cursor: 'pointer',
+  }),
+  chatPanel: {
+    flex: 1,
+    padding: '1.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  chatBox: {
+    flex: 1,
+    overflowY: 'auto',
+    border: '1px solid #cbd5e1',
+    padding: '1rem',
+    borderRadius: '8px',
+    backgroundColor: '#f8fafc',
+  },
+  message: (sender) => ({
+    textAlign: sender === 'Learner' ? 'right' : 'left',
+    marginBottom: '0.75rem',
+  }),
+  messageBubble: (sender) => ({
+    display: 'inline-block',
+    padding: '0.5rem 1rem',
+    backgroundColor: sender === 'Learner' ? '#fde68a' : '#d1fae5',
+    borderRadius: '10px',
+    maxWidth: '70%',
+    color: '#111827',
+  }),
+  inputRow: {
+    display: 'flex',
+    marginTop: '1rem',
+  },
+  input: {
+    flex: 1,
+    padding: '0.5rem',
+    borderRadius: '4px',
+    border: '1px solid #cbd5e1',
+    fontSize: '1rem',
+  },
+  sendButton: {
+    marginLeft: '0.5rem',
+    padding: '0.5rem 1rem',
+    backgroundColor: '#3b82f6',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  },
+};
+
+export default styles;
