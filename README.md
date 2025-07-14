@@ -1,12 +1,33 @@
-# React + Vite
+ Setup Instructions
+1. Clone the repository
+git clone https://github.com/your-username/ai-support-ticket-app.git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+     cd ai-support-ticket-app
 
-Currently, two official plugins are available:
+2. Install dependencies
+npm install
+3. Run the app
+bash
+Copy
+Edit
+npm run dev
+The app will be available at http://localhost:5173/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+AI Logic (Brief)
+While the app does not use an actual AI backend, it simulates an AI Support Assistant experience by:
 
-## Expanding the ESLint configuration
+<h5>1-Preloading conversations between Learner and Support.</h5>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h5>2-Letting users add new messages as if they are interacting with a support bot.</h5>
+
+<h5>3-In real-world applications, this could be extended to integrate with tools like Dialogflow, OpenAI API, or LangChain for dynamic AI replies.</h5>
+
+Key Features
+
+<h5>1-Ticket-based conversation view</h5>
+<h5>2-Split UI: Sidebar (tickets) + Chat panel</h5> 
+<h5>3-Real-time message updates</h5>
+<h5>4-Message persistence using localStorage</h5>
+<h5>5-Responsive and centered layout</h5>
+<h5>6-Modular components: Sidebar, ChatPanel, TicketCard</h5>
+
